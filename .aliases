@@ -12,5 +12,23 @@ alias cp='cp -v'
 
 # Shortcuts
 alias g="git"
+alias v="vim"
 alias dl="cd ~/Downloads"
 alias p="cd ~/Projects"
+
+# Git
+alias push="git push"
+alias undopush="git push -f origin HEAD^:master"
+alias master="git checkout master"
+alias status="git status"
+
+# Docker
+alias doup='docker-compose up -d'
+alias dodown='docker-compose down'
+alias dorun='docker run -it'
+
+# port
+alias port='lsof -i -n -P'
+
+# `cat` with beautiful colors. requires: sudo easy_install -U Pygments
+alias c='pygmentize -O style=monokai -f console256 -g'
